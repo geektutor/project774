@@ -39,6 +39,9 @@
 .footer .footer-tail a i {
   color: #f77e00;
 }
+.footer ul a li#active {
+  color: #f77e00;
+}
 @media screen and (max-width: 1024px) {
   .footer {
     padding: 50px 20px;
