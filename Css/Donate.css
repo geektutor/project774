@@ -1,0 +1,72 @@
+.Donate {
+  padding: 70px;
+  background: #fff;
+}
+.Donate .Donate-top {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.Donate .Donate-right {
+  width: 58%;
+}
+.Donate .Donate-right img {
+  width: 100%;
+}
+.Donate .Donate-left {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.Donate .Donate-left h1 {
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+.Donate .Donate-left p {
+  font-size: 20px;
+  padding-bottom: 30px;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+.Donate .Donate-left button {
+  background-color: #f77e00;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 40px;
+  border: none;
+}
+.Donate .Donate-tweet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.Donate .Donate-tweet div {
+  width: 32%;
+}
+@media screen and (max-width: 1024px) {
+  .Donate {
+    padding: 50px 20px;
+  }
+  .Donate .Donate-right {
+    width: 100%;
+  }
+  .Donate .Donate-left {
+    width: 100%;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .Donate .Donate-tweet div {
+    width: 48%;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Donate .Donate-tweet div {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
