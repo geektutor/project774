@@ -1,0 +1,227 @@
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 2;
+}
+
+section .container {
+    max-width: 1250px;
+    padding: 50px 70px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-header {
+    padding: 50px auto;
+    text-align: center;
+}
+
+.section-body {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 36px;
+}
+
+.about-title {
+    font-size: 44px;
+}
+
+.section-note,
+.about-project-note {
+    font-size: 18px;
+}
+
+.section-note.home-note {
+    font-size: 20px;
+}
+
+.about-header.section-header {
+    text-align: left;
+}
+
+.about-note {
+    font-size: 22px;
+}
+
+.main {
+    padding-top: 9vh;
+}
+
+.main-title {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.tweet-container {
+    max-width: 550px;
+    margin: auto;
+}
+
+.grid-image {
+    width: 100%;
+}
+
+.focus-container {
+    background-color: #ebedfb;
+    padding: 30px 70px;
+}
+
+.talent-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.talent-label {
+    padding: 20px 40px;
+}
+
+.talent-card {
+    border: 1px solid transparent;
+    border-radius: 7px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 8px 10px;
+    overflow: hidden;
+    width: 240px;
+    background: #ffffff;
+    opacity: 0.75;
+}
+
+.talent-card.active {
+    opacity: 1;
+}
+
+.talent-image-container {
+    max-width: 650px;
+    margin: auto;
+}
+
+.objectives-container {
+    display: flex;
+    position: relative;
+    gap: 0 20px;
+}
+
+.objective-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.objectives-container:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.objective-body, .image-container {
+    flex: 49%;
+    padding: 40px 0;
+}
+
+.vertical {
+    position: relative;
+    width: 1px;
+    background: #dedede;
+}
+
+.pagination {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    width: 24px;
+    height: 24px;    
+    font-weight: 400;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+    line-height: 23px;
+    font-size: 18px;
+    color: #60a2f7;
+}
+@media screen and (max-width: 769px) {
+    section .container {
+        max-width: 1300px;
+        padding: 50px 20px;
+        margin: auto;
+    }
+    
+    .main-title {
+        font-weight: 600;
+        font-size: 30px;
+    }
+    
+    .focus-container {
+        padding: 30px 70px;
+    }
+
+    .talent-image {
+        display: none;
+    }
+}
+@media screen and (max-width: 576px) {
+    section .container {
+        padding: 50px 20px;
+    }
+    
+    .section-header {
+        padding: 50px auto;
+        text-align: center;
+    }
+    
+    .main {
+        padding-top: 9vh;
+    }
+    
+    .main-title {
+        font-weight: 600;
+        font-size: 30px;
+    }
+    
+    .focus-container {
+        padding: 30px 50px;
+    }
+    
+    .talent-card {
+        width: 100%;
+        opacity: 1;
+        border: none;
+    }
+    
+    .objectives-container {
+        flex-direction: column;
+    }
+    
+    .objectives-container:nth-child(odd) {
+        flex-direction: column;
+    }
+    
+    .objective-body, .image-container {
+        padding: 40px 25px;
+    }
+    
+    .vertical {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0%;
+        width: 1px;
+        background: #dedede;
+    }    
+  }
