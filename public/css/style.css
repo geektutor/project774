@@ -1,4 +1,3 @@
-
 button {
   cursor: pointer;
 }
@@ -6,8 +5,8 @@ body {
   background: lightgrey;
 }
 .hero {
-  background-image: url('../image/hero.jpg');
-  height: 100vh;
+  background-image: url("../image/hero.jpg");
+  height: 80vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -21,7 +20,8 @@ body {
 }
 .hero .hero-wrapper h1 {
   font-size: 50px;
-  padding-bottom: 35px;
+  padding-bottom: 10px;
+  font-weight: 300;
 }
 .hero .hero-wrapper p {
   font-size: 20px;
@@ -93,7 +93,7 @@ body {
 }
 .events {
   padding: 70px;
-  background: #fff;
+  background: #f8f5f5;
 }
 .events h1 {
   text-align: center;
@@ -109,9 +109,9 @@ body {
 .events .events-wrapper .events-card {
   width: 32%;
   border: 2px solid #e6e6e6;
-  border-radius: 8px;
+  border-radius: 15px;
   transition: box-shadow 0.3s;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   margin-right: 1.33%;
 }
 .events .events-wrapper .events-card:hover {
@@ -120,6 +120,7 @@ body {
 }
 .events .events-wrapper .events-card img {
   width: 100%;
+  border-radius: 15px 15px 0 0;
 }
 .events .events-wrapper .events-card .events-text {
   padding: 20px 10px 10px 10px;
@@ -144,6 +145,133 @@ body {
   border-radius: 4px;
   background: none;
 }
+.register {
+  padding: 70px;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+}
+
+.register .register-left {
+  width: 48%;
+  margin-right: 20px;
+}
+
+.register .register-left h1 {
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.register .register-left .contact-info {
+  margin-top: 40px;
+}
+
+.register .register-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.register .register-right h1 {
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.register .register-right p {
+  font-size: 20px;
+  padding-bottom: 30px;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+
+.register .register-right button {
+  background-color: #f77e00;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 40px;
+  border: none;
+}
+
+.register .register-right .register-form-wrapper {
+  background-color: #f1ae66;
+  padding: 14px;
+  border-radius: 15px;
+}
+
+.register .register-right .register-form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.register .register-right .register-form-row .form-control {
+  width: 48%;
+}
+
+.register .register-right input {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.register .register-right label {
+  display: block;
+  font-weight: 300;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.register .register-right .form-control {
+  position: relative;
+}
+
+.register .register-right .form-control label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #f77e00;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+}
+
+.register .register-right .form-control input:focus + label::after {
+  background-color: #555555;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .register {
+    padding: 40px;
+  }
+
+  .register .register-left,
+  .register .register-right {
+    width: 100%;
+  }
+
+  .register .register-right .register-form-row .form-control {
+    width: 100%;
+  }
+
+  .register .register-form-row {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 .partners {
   padding: 70px;
   background: #fff;
@@ -226,7 +354,7 @@ body {
 }
 .donate {
   padding: 70px;
-  background: #fff;
+  background: #f8f5f5;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
@@ -235,7 +363,7 @@ body {
   width: 58%;
 }
 .donate .donate-left img {
-  width: 100%;
+  width: 70%;
 }
 .donate .donate-right {
   width: 40%;
@@ -261,6 +389,7 @@ body {
   padding: 12px 40px;
   border: none;
 }
+
 .host {
   padding: 70px;
   background: #282828;
