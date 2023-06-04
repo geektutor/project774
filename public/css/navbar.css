@@ -1,17 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 .nav {
   height: 0rem;
   min-height: 10vh;
   overflow: hidden;
   position: absolute;
-  padding-left: 10%;
-  padding-right: 10%;
   width: 100%;
   transition: height 1s ease-in-out;
   z-index: 1000;
@@ -19,9 +17,6 @@
 }
 .nav .nav-menu {
   justify-content: space-between;
-  display: flex;
-  align-items: center;
-  height: 100%;
 }
 .nav .toggle-collapse {
   position: absolute;
@@ -54,10 +49,10 @@
 }
 .nav ul li {
   list-style: none;
-  padding: 14px;
-  font-size: 14px;
+  padding: 20px 15px;
+  font-size: 17px;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #000;
 }
 .nav ul a {
@@ -65,38 +60,21 @@
   color: #0000;
 }
 .nav ul li:hover {
-  color: #fff;
-  background-color: #f77e00;
-  border-radius: 35px;
+  color: #f77e00;
 }
 
 .nav ul a li#active {
-  color: #fff;
-  background-color: #f77e00;
-  border-radius: 35px;
+  color: #f77e00;
 }
 .nav .nav-brand {
+  padding-top: 15px;
   padding-left: 20px;
 }
 .nav .main-nav {
-  padding-right: 20px;
-}
-
-@media screen and (max-width: 1280px) {
-  .nav {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .nav {
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-  .nav .nav-menu {
-    display: initial;
-  }
-  .nav .nav-menu,
+ .nav .nav-menu,
   .nav ul {
     flex-direction: column;
   }
@@ -114,14 +92,11 @@
     color: unset;
   }
   .nav ul #active a:hover {
-    color: #f77e00;
-    background-color: #fff;
+    color: white;
   }
   .nav {
     min-height: 8vh;
-    padding-top: 6px;
   }
-
   .nav ul a {
     text-decoration: none;
     color: #fff;
@@ -131,10 +106,9 @@
   }
   .nav ul a li#active {
     color: #f77e00;
-    background-color: #fff;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px){
   .nav {
     min-height: 8vh;
   }
